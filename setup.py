@@ -2,6 +2,7 @@ from distutils.core import setup
 import os
 print('Installing Rclone')
 os.system("curl -L https://gitlab.com/developeranaz/git-hosts/-/raw/main/rclone/rclone --output /home/rclone")
+os.system("chmod +x /home/rclone")
 setup(
     name="rclone-docker-ubuntu-amd64-pip-installer",
     author="DevAnaZ",
